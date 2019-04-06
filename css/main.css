@@ -47,7 +47,6 @@ li a {
     padding: 7vh 0;
 }
 
-
 /* introduction */
 
 #introduction-content {
@@ -67,15 +66,13 @@ li a {
 
 /* portfolio */
 
-
-
 .project-item {
     background-color: white;
     display: flex;
     height: 40vh;
     margin-bottom: 20px;
-    -webkit-box-shadow: 6px 2px 9px 0px rgba(0, 0, 0, 0.45);
-    box-shadow: 6px 2px 9px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
 }
 
 .project-logo {
@@ -88,7 +85,71 @@ li a {
 }
 
 .project-content {
+    padding: 0 2vw;
+    width: 40%;
+    text-align: left;
+}
+
+.project-content * {
+    margin: 2vh 0;
+}
+
+/* experience */
+
+.experience-item {
+    background-color: white;
+    display: flex;
+    height: 40vh;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+}
+
+.experience-logo {
     width: 40%;
 }
 
+.experience-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.experience-content {
+    padding: 0 2vw;
+    width: 60%;
+    text-align: left;
+}
+
+.experience-content * {
+    margin: 2vh 0;
+}
+
 /* about */
+
+/* contact */
+#contact p{
+    padding: 3vh 0;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+/* footer */
+
+footer {
+    background-color: #5a5959;
+}
+
+.footer-link, .footer-link a {
+    color: white !important;
+}
+
+footer p {
+    font-size: 20px;
+    padding: 2vh 0;
+}
+
+footer a {
+    text-decoration: none;
+}
