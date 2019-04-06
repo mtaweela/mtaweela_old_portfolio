@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif, "Times New Roman", Times, serif;
+    color: #5a5959;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* nav bar */
+
+#navbar {
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+    overflow: hidden;
+    width: 541px;
+    margin: auto;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* content */
+
+.content {
+    margin: auto;
+}
+
+.content h2 {
+    padding: 7vh 0;
+}
+
+
+/* introduction */
+
+#introduction-content {
+    height: 70vh;
+    display: flex;
+    background-color: white;
+}
+
+#introduction-content div {
+    margin: auto;
+}
+
+.content {
+    text-align: center;
+    padding: 2vh 19.1%;
+}
+
+/* portfolio */
+
+
+
+.project-item {
+    background-color: white;
+    display: flex;
+    height: 40vh;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 6px 2px 9px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 6px 2px 9px 0px rgba(0, 0, 0, 0.45);
+}
+
+.project-logo {
+    width: 60%;
+}
+
+.project-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-content {
+    width: 40%;
+}
+
+/* about */
