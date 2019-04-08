@@ -26,11 +26,30 @@ var projects = [
     }
 ]
 
+var experiences = [
+    {
+        company: "Bit68 (10/2018 - Now)",
+        job_title: "Full Stack Developer",
+        job_description: "Full stack job include creating APIs for different application.",
+        company_image: "img/bit68_.png",
+        company_url: "https://bit68.com/",
+    },
+    {
+        company: "Bit68 (10/2018 - Now)",
+        job_title: "Full Stack Developer",
+        job_description: "Full stack job include creating APIs for different application.",
+        company_image: "img/bit68_.png",
+        company_url: "https://bit68.com/",
+    }
+]
+
 /**
- * script
+ * ************ script ************
  */
 
-// project
+/**
+ * projects
+ */
 var project_main_element = $("#project");
 $("#project").remove();
 
@@ -43,4 +62,23 @@ projects.forEach(function (project) {
     project_element.find('p').text(project.description);
 
     project_element.appendTo("#portfolio");
+});
+
+
+/**
+ * experiences
+ */
+var experience_main_element = $("#experience_item");
+$("#experience_item").remove();
+
+experiences.forEach(function (experience) {
+    var experience_element = experience_main_element.clone();
+    experience_element.find('h3').text(experience.company);
+
+    experience_element.find('img')[0].src = experience.company_image;
+    experience_element.find('a')[0].href = experience.company_url;
+    experience_element.find('h4').text(experience.job_title);
+    experience_element.find('p').text(experience.job_description);
+
+    experience_element.appendTo("#experience");
 });

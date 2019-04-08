@@ -10,6 +10,22 @@ body {
     background-color: #f5f5f5;
 }
 
+.logo-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* cards */
+
+.card {
+    background-color: white;
+    display: flex;
+    height: 40vh;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+}
+
 /* nav bar */
 
 #navbar {
@@ -65,22 +81,8 @@ li a {
 
 /* portfolio */
 
-.project-item {
-    background-color: white;
-    display: flex;
-    height: 40vh;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
-}
-
 .project-logo {
     width: 60%;
-}
-
-.project-logo img {
-    width: 100%;
-    height: 100%;
 }
 
 .project-content {
@@ -95,14 +97,38 @@ li a {
 
 /* experience */
 
-.experience-item {
-    background-color: white;
-    display: flex;
-    height: 40vh;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+.experience-logo {
+    width: 40%;
 }
+
+.experience-content {
+    padding: 0 2vw;
+    width: 60%;
+    text-align: left;
+}
+
+.experience-content * {
+    margin: 2vh 0;
+}
+
+
+/* skills */
+
+.skills-logo {
+    width: 30%;
+}
+
+.skills-content {
+    padding: 0 2vw;
+    width: 70%;
+    text-align: left;
+}
+
+.skills-content * {
+    margin: 2vh 0;
+}
+
+/* about */
 
 .experience-logo {
     width: 40%;
@@ -122,8 +148,6 @@ li a {
 .experience-content * {
     margin: 2vh 0;
 }
-
-/* about */
 
 /* contact */
 #contact p{
