@@ -6,16 +6,37 @@ var projects = [
     {
         img: 'img/egy-garage.png',
         title: 'EgyGarage',
-        description: 'built the backend in form of restful APIs for car parts store.',
+        description: `
+        Market Store for selling Car parts.
+        <br>
+        <br>
+        Contibuted by building the backend system in form of restful APIs.
+        `,
         link: 'https://www.egy-garage.com',
-        link_content: 'egy-garage.com'
+        link_content: 'egy-garage.com',
     },
     {
         img: 'img/mobileshop.png',
         title: 'Mobile Shop',
-        description: 'One the biggest markets in Egypt for selling Mobiles, computers and other accessories. Built the REST backend that get thousands of visits.',
+        description: `
+        One the biggest markets in Egypt for selling Mobiles and its accessories with thousands of website visites monthly.
+        <br>
+        <br>
+        Contibuted by building the backend system in form of restful APIs with Payment integration.
+        `,
         link: 'https://mobileshop.com.eg/',
-        link_content: 'mobileshop.com.eg'
+        link_content: 'mobileshop.com.eg',
+    },
+    {
+        img: 'img/nodejs-jwt-authentication-express-bcryptjs-jsonwebtoken-mongoose.png',
+        title: 'User Management System',
+        description: `
+        A simple project for managing users with JWT authenication in a node project using API end points.
+        <br>
+        <br>
+        Users could login to their accounts, logout, edit their information and delete it.
+        `,
+        github: 'https://github.com/mtaweela/userManagment'
     }
 ]
 
@@ -47,7 +68,7 @@ var experiences = [
         and building admin panel for controlling users and devices.
         `,
         company_image: "img/renile.png",
-        company_url: "https://bit68.com/",
+        company_url: "https://re-nile.com/",
     }
 ]
 
@@ -56,33 +77,38 @@ var skills = [
         title: "MEAN Stack Web Development",
         image: "img/mean_logo.png",
         description: `
-        I've been making websites as hobby for 7 years now. Before being hired under the web team at Pinger, 
-        I worked as a freelance web developer.
+        I have been working with MEAN stack for nearly 6 months now for building IoT based backend system.
         <br>
-        I've primary worked with HTML/CSS, Javascript/Jquery, Python Django and MySQL.`
+        <br>
+        I've primary worked with Node.js/Express, NGINX with deploying the system on IBM cloud instance.`
     },
     {
         title: "Full Stack Web Development",
         image: "img/full_stack.png",
         description: `
-        I've been making websites as hobby for 7 years now. Before being hired under the web team at Pinger, 
-        I worked as a freelance web developer.
+        I have been working with this stack since 10-2018 for different projects.
         <br>
-        I've primary worked with HTML/CSS, Javascript/Jquery, Python Django and MySQL.`
+        <br>
+        I've primary worked with Python/Django/Django Rest Framework, Ubuntu, Apache,
+        Nginx and MySQL with AWS cloud instances and tools.`
     }
 ]
 
 var about = [
     {
         image: "img/me_logo.png",
-        description: `I've been making websites as hobby for 7 years now. Before being hired under the web team at Pinger, I worked as a freelance web developer.
-
-        I've primary worked with HTML/CSS, Javascript/Jquery, Python/Flask/Django, PHP, and MySQL.`
+        description: `I've been making websites for nearly a year now. Before shifting to programming, I have got a bachelor in material science.
+        <br>
+        <br>
+        When I'm not programming, my free time is spent reading some stuff or watching animation(Otaku).
+        <br>
+        <br>
+        I've primary worked with Python/Django, Javascript/Node.js, MongoDB and MySQL.`
     }
 ]
 
 var footer = {
-    
+
 }
 
 /**
@@ -98,10 +124,18 @@ $("#project").remove();
 projects.forEach(function (project) {
     var project_element = project_main_element.clone();
     project_element.find('img')[0].src = project.img;
-    project_element.find('h3').text(project.title);
-    project_element.find('a')[0].href = project.link;
-    project_element.find('a').text(project.link_content);
-    project_element.find('p').text(project.description);
+    project_element.find('h3').html(project.title);
+    project_element.find('.project-content a')[0].href = project.link;
+    project_element.find('.project-content a').html(project.link_content);
+    project_element.find('p').html(project.description);
+
+    project_element.find(".website")[0].href = project.link;
+    project_element.find(".github")[0].href = project.github;
+    if (!project.link) {
+        project_element.find('.project-content a').html('');
+        project_element.find(".website").remove();
+    }
+    if (!project.github) project_element.find(".github").remove();
 
     project_element.appendTo("#portfolio");
 });
