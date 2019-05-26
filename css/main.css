@@ -58,7 +58,7 @@ body {
 /* introduction */
 
 #introduction-content {
-    height: 60vh;
+    padding: 60px 0px;
     display: flex;
     background-color: white;
 }
