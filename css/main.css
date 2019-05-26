@@ -30,22 +30,16 @@ body {
 
 #navbar {
     background-color: white;
+    padding: 0;
+    text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    width: 596px;
+#navbar #nav-items-container {
     margin: auto;
 }
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
+#navbar a {
+    display: inline-block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -101,7 +95,7 @@ li a {
     opacity: 0;
 }
 
-#project:hover .website_link_background  {
+#project:hover .website_link_background {
     visibility: visible;
     opacity: 1;
 }
