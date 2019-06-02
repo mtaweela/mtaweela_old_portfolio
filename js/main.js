@@ -4,16 +4,16 @@
 
 var projects = [
     {
-        img: 'img/egy-garage.png',
-        title: 'EgyGarage',
+        img: 'img/tradeline.png',
+        title: 'Tradeline',
         description: `
-        Market Store for selling Car parts.
+        Market Store for selling Apple products.
         <br>
         <br>
-        Contibuted by building the backend system in form of restful APIs.
+        Contibuted by reshaping the backend system in form of restful APIs instead of template based website.
         `,
-        link: 'https://www.egy-garage.com',
-        link_content: 'egy-garage.com',
+        link: 'https://tradelinestores.com',
+        link_content: 'tradelinestores.com',
     },
     {
         img: 'img/mobileshop.png',
@@ -26,6 +26,18 @@ var projects = [
         `,
         link: 'https://mobileshop.com.eg/',
         link_content: 'mobileshop.com.eg',
+    },
+    {
+        img: 'img/egy-garage.png',
+        title: 'EgyGarage',
+        description: `
+        Market Store for selling Car parts.
+        <br>
+        <br>
+        Contibuted by building the backend system in form of restful APIs.
+        `,
+        link: 'https://www.egy-garage.com',
+        link_content: 'egy-garage.com',
     },
     {
         img: 'img/nodejs-jwt-authentication-express-bcryptjs-jsonwebtoken-mongoose.png',
